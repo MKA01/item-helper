@@ -11,6 +11,7 @@ import {LoginPageComponent} from './login-page/login-page.component';
 import {AuthService} from './auth.service';
 import {AuthGuardService} from './auth-guard.service';
 import {FormsModule} from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {FormsModule} from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [
     AuthService,
