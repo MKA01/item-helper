@@ -1,0 +1,17 @@
+.content-container {
+  padding: 80px 30px;
+}
+
+.divider {
+  background-color: #bbb;
+  width: 1px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.nullify-spacings {
+  margin: 0;
+  padding: 0;
+}
+
+
