@@ -1,0 +1,20 @@
+<div class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+  <div class="navbar-brand">
+    Product Helper
+    <!--// TODO: Zmienić nazwę-->
+  </div>
+
+  <button (click)="homeButtonClick()"
+          class="btn btn-outline-danger home-button">
+    Home
+  </button>
+
+  <button (click)="logOutButtonClick()"
+          class="btn btn-outline-danger logout-button">
+    Log out
+  </button>
+
+</div>
+
+<router-outlet></router-outlet>
