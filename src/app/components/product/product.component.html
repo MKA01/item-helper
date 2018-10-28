@@ -1,0 +1,21 @@
+<div class="card col-12"
+     (click)="onProductClick()">
+
+  <img *ngIf="product.imageUrl != null && product.imageUrl !== ''"
+       [src]="product.imageUrl"
+       alt="Card image"
+       class="card-img-top">
+
+  <div class="card-body">
+
+    <h5 class="card-title">
+      {{product.name}}
+    </h5>
+
+    <p class="card-text">
+      Amount: {{product.amount}}
+    </p>
+
+  </div>
+
+</div>
