@@ -1,0 +1,67 @@
+<form (ngSubmit)="addProduct(productForm)"
+      #productForm="ngForm">
+
+  <div class="col-12">
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-test prepend">
+          Product name
+        </span>
+      </div>
+      <input type="text"
+             class="form-control"
+             placeholder="Bread"
+             [(ngModel)]="product.name"
+             name="name"
+             ngModel>
+    </div>
+  </div>
+
+  <div class="col-12">
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-test prepend">
+          Product amount
+        </span>
+      </div>
+      <input type="number"
+             class="form-control"
+             placeholder="12"
+             [(ngModel)]="product.amount"
+             name="amount"
+             ngModel>
+    </div>
+  </div>
+
+  <div class="col-12">
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-test prepend">
+          Image url
+        </span>
+      </div>
+      <input type="text"
+             class="form-control"
+             placeholder="http://imigur.com/12345.png"
+             [(ngModel)]="product.imageUrl"
+             name="imageUrl"
+             ngModel>
+    </div>
+  </div>
+
+  <div class="col-12">
+    <button class="btn btn-primary btn-block"
+            type="submit">
+      {{product.id!=null ? 'Save changes' : 'Add product to list'}}
+    </button>
+  </div>
+
+  <div class="col-12">
+    <button class="btn btn-outline-secondary btn-block"
+            type="reset"
+            (click)="resetForm(productForm)">
+      Reset form
+    </button>
+  </div>
+
+</form>
