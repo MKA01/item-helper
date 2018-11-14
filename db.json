@@ -3,26 +3,20 @@
     {
       "id": 1,
       "name": "Chleb",
-      "amount": 2,
-      "imageUrl": "https://bit.ly/2oxfCO3"
-    },
-    {
-      "id": 3,
-      "name": "Mleko",
-      "amount": 12,
-      "imageUrl": "https://images.pexels.com/photos/236010/pexels-photo-236010.jpeg"
-    },
-    {
-      "id": 4,
-      "name": "Sok pomarańczowy",
       "amount": 4,
-      "imageUrl": "https://images.pexels.com/photos/158053/fresh-orange-juice-squeezed-refreshing-citrus-158053.jpeg"
+      "imageUrl": "https://bit.ly/2oxfCO3"
     },
     {
       "id": 1540751896898,
       "name": "Masło",
       "amount": 1,
       "imageUrl": "https://s9.dziennik.pl/pliki/10302000/10302387-maslo-900-553.jpg"
+    },
+    {
+      "id": 1541426714847,
+      "name": "Banany",
+      "amount": 1,
+      "imageUrl": "https://ciekawe.org/wp-content/uploads/2016/07/banan-728x546.jpg"
     }
   ]
 }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { OracleDatabaseService } from '../../services/oracle-database.service';
+import { Product } from '../../product';
 
 @Component({
   selector : 'app-manage-products',
@@ -7,11 +9,44 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ManageProductsComponent implements OnInit {
 
-  constructor() {
+  products: Product[] = [];
 
+  constructor(private _oracleDatabase: OracleDatabaseService) {
   }
 
   ngOnInit() {
   }
+
+  click() {
+    this._oracleDatabase.getAllProducts()
+      .subscribe((products: Product[]) => {
+        // this.products = products;
+        console.log('manage-product');
+        console.log(products);
+      });
+
+    // console.log(this._oracleDatabase.getAllProducts());
+
+    // console.log(this._oracleDatabase.getOneProduct('Chleb'));
+
+    // this._oracleDatabase.getAllProducts()
+    //   .subscribe((response: Product[]) => {
+    //     this.products = response;
+    //   });
+  }
+
+  log() {
+    // this._oracleDatabase.getOneProduct(1)
+    //   .subscribe((product: Product) => {
+    //     console.log('one');
+    //     console.log(product);
+    //   });
+
+    this._oracleDatabase.getAllProducts()
+      .subscribe((products: Product[]) =>{
+        console.log(products.find(el => el.id === 1));
+      })
+  }
+
 
 }

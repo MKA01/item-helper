@@ -17,6 +17,7 @@ import { ProductPageComponent } from './components/product-page/product-page.com
 import { CreateProductComponent } from './components/create-product/create-product.component';
 import { ProductService } from './services/product.service';
 import { HttpClientModule } from '@angular/common/http';
+import { DatabaseModuleComponent } from './components/database-module/database-module.component';
 
 @NgModule({
   declarations : [
@@ -29,7 +30,8 @@ import { HttpClientModule } from '@angular/common/http';
     ProductComponent,
     CreateProductFormComponent,
     ProductPageComponent,
-    CreateProductComponent
+    CreateProductComponent,
+    DatabaseModuleComponent
   ],
   imports : [
     BrowserModule,
