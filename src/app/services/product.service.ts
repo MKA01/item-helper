@@ -22,7 +22,7 @@ export class ProductService {
   }
 
   addProduct(product: Product) {
-    this._httpClient.post('http://localhost:3000/products', product)
+    this._httpClient.post('http://localhost:8000/api/products', product)
       .subscribe((response: HttpResponse<any>) => {
         this._products.push(product);
         this._wasProductsListUpdated.emit();
@@ -30,15 +30,15 @@ export class ProductService {
   }
 
   editProduct(product: Product, id: number) {
-    return this._httpClient.put(`http://localhost:3000/products/${id}`, product);
+    return this._httpClient.put(`http://localhost:8000/api/products/${id}`, product);
   }
 
   deleteProduct(id: number) {
-    return this._httpClient.delete(`http://localhost:3000/products/${id}`);
+    return this._httpClient.delete(`http://localhost:8000/api/products/${id}`);
   }
 
   loadProducts() {
-    return this._httpClient.get('http://localhost:3000/products');
+    return this._httpClient.get('http://localhost:8000/api/products');
   }
 
 }

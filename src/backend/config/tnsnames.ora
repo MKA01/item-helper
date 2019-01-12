@@ -1,0 +1,7 @@
+finance =
+ (DESCRIPTION =
+   (ADDRESS = (PROTOCOL = TCP)(HOST = 155.158.112.45:1521)(PORT = 1521))
+   (CONNECT_DATA =
+     (SID = oltpstud)
+   )
+ )
